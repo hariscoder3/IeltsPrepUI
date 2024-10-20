@@ -52,7 +52,8 @@ const MainContent = ({ activeScreen, handleFileUpload, handleSubmit, isLoading, 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {vocabulary.map((item, index) => (
               <Card key={index} className="p-4">
-                <h3 className="text-xl font-semibold mb-2 text-indigo-600">{item.word}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-indigo-600">Group Number: {item.groupNumber}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-indigo-600">Word: {item.word}</h3>
                 <p className="mb-2"><strong className="text-indigo-500">Meaning:</strong> {item.meaning}</p>
                 <p className="mb-2"><strong className="text-indigo-500">Formal Writing:</strong> {item.formal}</p>
                 <p><strong className="text-indigo-500">Semi-formal Speaking:</strong> {item.semiformal}</p>

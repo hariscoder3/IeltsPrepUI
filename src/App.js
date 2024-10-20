@@ -78,8 +78,8 @@ const App = () => {
       setIsProcessed(true);
       setIsLoading(false);
       setVocabulary([
-        { word: 'Example', meaning: 'A representative form', formal: 'This case serves as an exemplar.', semiformal: 'Let me give you an example.' },
-        { word: 'Analyze', meaning: 'Examine methodically', formal: 'Please analyze the data and provide your findings.', semiformal: 'Can you take a look at this and tell me what you think?' },
+        { groupNumber: 1,word: 'Example', meaning: 'A representative form', formal: 'This case serves as an exemplar.', semiformal: 'Let me give you an example.' },
+        { groupNumber: 1, word: 'Analyze', meaning: 'Examine methodically', formal: 'Please analyze the data and provide your findings.', semiformal: 'Can you take a look at this and tell me what you think?' },
       ]);
       setAnswers([
         { question: 'What is the main idea of the passage?', answer: 'The main idea is the importance of sustainable urban planning.' },
@@ -105,7 +105,7 @@ const App = () => {
         {/* Header Section */}
         <header className="text-blue-600 text-center py-4 text-2xl font-bold" 
                 style={{ marginTop: '30px', marginLeft: '80px' }}>
-          IELTS Preparation
+          TestFastTrack
         </header>
 
         {/* Main Content Section */}
